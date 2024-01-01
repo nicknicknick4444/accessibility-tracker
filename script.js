@@ -231,14 +231,22 @@ function slide() {
                     notif.style.left = left3.toString() + "px";
                 }
             } else {
-                sta_width = station.offsetWidth;
-                if (parseInt(notif.style.left.replace("px", "")) < 0 - 110) {
-                    pix = (sta_width - 70).toString() + "px";
-                    notif.style.left = pix;
-                } 
-                else {
-                    notif.style.left = pix;
+                if (station.offsetWidth !== 0) {
+                    sta_width = station.offsetWidth;
+                } else {
+                    console.log("BAGS!", station.innerHTML, station.innerHTML);
+                    sta_width = window.innerWidth;
                 }
+                if (parseInt(notif.style.left.replace("px", "")) < 0 - 110) {
+                    // if (station !== null) {
+                    //     console.log("CUBBINS!", station.innerHTML, sta_width);
+                    // }
+                    pix = (sta_width - 70).toString() + "px";
+                    // notif.style.left = pix;
+                } 
+                // else {
+                    notif.style.left = pix;
+                // }
             }
         }
     }

@@ -16,10 +16,6 @@ app.get("/script.js", (req, res) => {
     res.sendFile("/script.js", {root: __dirname});
 });
 
-// app.get("/api-call.js", (req, res) => {
-//     res.sendFile("/api-call.js", {root: __dirname});
-// });
-
 app.get("/images/favicon.ico", (req, res) => {
     res.sendFile("/images/favicon.ico", {root: __dirname});
 });
