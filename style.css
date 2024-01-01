@@ -314,9 +314,9 @@ footer {
 		max-width: 570px;
 		height: 61px;
 		position: fixed;
-		/*z-index: 2000;
+		z-index: 2000;
 		background-color: #fff;
-		border-bottom: 1px solid #fff;*/
+		/*border-bottom: 1px solid #fff;*/
 	}
 	
 	.top-heading {
