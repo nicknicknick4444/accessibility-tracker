@@ -1,10 +1,12 @@
 body {
-	margin: 0;	
+	margin: 0;
+	margin-right: 0;	
 }
 
 #api-output {
 	display: block;
-	min-width: 570px;
+	/*min-width: 570px;*/
+	min-width: 700px;
 	max-width: 750px;
 	margin: auto;
 }
@@ -47,7 +49,6 @@ body {
 }
 
 #pressy {
-	/*background-color: #004791;*/
 	width: 130px;
 	font-size: 15px;
 	border-radius: 3px;
@@ -66,9 +67,6 @@ body {
 }
 
 #press-region {
-	/*background-color: #ee0000;
-	padding-bottom: 2px;
-	height: 30px;*/
 }
 
 #last-update {
@@ -83,11 +81,8 @@ body {
 }
 
 .unit {
-	/*border-bottom-width: 1px;
-	border-bottom-style: solid;
-	border-bottom-color: #aeaeae;*/
 	max-width: 750px;
-	min-width: 570px;
+	min-width: 700px;
 	text-align: center;	
 	background-color: #333;
 	color: #fff;
@@ -179,11 +174,9 @@ body {
 	padding-left: 5px;
 	margin-left: -5px;
 	background-color: #333;
-	
 }
 
 .heading2 {
-	/*margin-left: 5px;*/
 	display: block;
 	text-align: center;
 }
@@ -204,19 +197,14 @@ body {
 .notif-inner {
 	position: relative;
 	bottom: 9px;
-	/*min-width: 80px;*/
 	width: 100%;
-	/*margin: 0;*/
 	font-size: 12px;
 	line-height: 32px;
 	text-align: center;
-	/*overflow: hidden;*/
 }
 
 .control, .control2 {
 	float: right;
-	padding-right: 8px;
-	padding-left: 8px;
 	font-size: 25px;
 	cursor: pointer;
 	font-family: helvetica;
@@ -226,6 +214,8 @@ body {
 
 .control {
 	margin-top: -5px;
+	padding-left: 8px;
+	padding-right: 8px;
 	background-color: #004791;
 	color: #fff;
 	position: relative;
@@ -238,8 +228,6 @@ body {
 	background-color: #ee0000;
 	color: #fff;
 	font-size: 30px;
-	/*margin-top: -8px;
-	padding-top: 1px;*/
 	padding-left: 11px;
 	padding-right: 11px;
 	padding-bottom: 2px;
@@ -285,19 +273,8 @@ body {
 #left-cover, #right-cover {
 	background-color: #000;
 	position: absolute;
-	
 	height: 100%;
 	z-index: 2000;
-}
-
-#left-cover {
-	left: 0;
-	min-width: 5px;
-}
-
-#right-cover {
-	right: -5;
-	top: 120;	
 }
 
 footer {
@@ -317,13 +294,11 @@ footer {
 	
 	#api-output {
 		min-width: 250px;
-		max-width: 760px;
-		margin-top: 52px;
+		max-width: 570px;
+		margin-top: 53px;
 	}
 
 	.unit {
-		/*min-width: 100px;
-		max-width: 749px;*/
 		min-width: 100px;
 		width: 100%;
 		margin-left: 0;
@@ -332,19 +307,16 @@ footer {
 	.top-contents {
 		font-size: 21px;
 		background-color: #fff;
-		/*margin-top: -10px;
-    		margin-left: -8px;
-		margin-right: -8px;*/
 		top: 0;
 		left: 0;
 		right: 0;
 		min-width: 100px;
 		max-width: 570px;
-		height: 60px;
+		height: 61px;
 		position: fixed;
-		z-index: 2000;
+		/*z-index: 2000;
 		background-color: #fff;
-		border-bottom: 1px solid #fff;
+		border-bottom: 1px solid #fff;*/
 	}
 	
 	.top-heading {
@@ -352,12 +324,19 @@ footer {
 		max-width: 570px;
 	}
 
+	#image-box {	
+		min-width: 100px;
+		display: block;
+		/*background-color: #ee0000;*/
+	}
+
 	.masthead {
-		width: 80;
-		position: absolute;
-		margin-top: -3px;
-		margin-left: 0px;
-		padding-top: 16px;
+		max-width: 80px;
+		position: relative;
+		margin-top: 0px;
+		/*margin-left: 1%;*/
+		margin: auto;
+		padding-top: 13px;
 		padding-right: 6px;
 		padding-bottom: 15px;
 		padding-left: 17px;
@@ -478,7 +457,7 @@ footer {
 
 	.control {
 		position: relative;
-		right: -1;
+		right: 0;
 		margin-top: -5px;
 		padding-top: 1px;	
 		line-height: 35px;
