@@ -9,7 +9,7 @@ var sta_width = 3000;
 let data_back = {};
 let multi = {};
 let collect_it = [];
-const delay = 30000;
+const delay = 300000;
 
 function make_req() {
     fetch("https://api.tfl.gov.uk/Disruptions/Lifts/")
@@ -231,22 +231,11 @@ function slide() {
                     notif.style.left = left3.toString() + "px";
                 }
             } else {
-                if (station.offsetWidth !== 0) {
-                    sta_width = station.offsetWidth;
-                } else {
-                    console.log("BAGS!", station.innerHTML, station.innerHTML);
-                    sta_width = window.innerWidth;
-                }
+                sta_width = window.innerWidth;
                 if (parseInt(notif.style.left.replace("px", "")) < 0 - 110) {
-                    // if (station !== null) {
-                    //     console.log("CUBBINS!", station.innerHTML, sta_width);
-                    // }
                     pix = (sta_width - 70).toString() + "px";
-                    // notif.style.left = pix;
-                } 
-                // else {
-                    notif.style.left = pix;
-                // }
+                }
+                notif.style.left = pix;
             }
         }
     }
@@ -258,10 +247,10 @@ function slide() {
 };
 
 function live_bullet() {
-    if (bullet.style.display === "none") {
-        bullet.style.display = "inline";
-    } else if (bullet.style.display === "inline") {
-        bullet.style.display = "none";
+    if (bullet.style.color === "rgb(255, 255, 255)") {
+        bullet.style.color = "rgb(0, 71, 145)";
+    } else if (bullet.style.color === "rgb(0, 71, 145)") {
+        bullet.style.color = "rgb(255, 255, 255)";
     }
     setTimeout(live_bullet, 560);
 };
