@@ -1,0 +1,36 @@
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bubbler+One&family=Electrolize&family=Poppins:wght@200&family=Koulen&family=Press+Start+2P&family=Roboto+Mono:wght@200&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+        <title>TFL Accessibility Checker</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" type="module"></script>
+        <!-- <script src="/server.js" type="module"></script> -->
+        <script src="/script.js" type="module"></script>
+        <script src="/api-call.js" type="module"></script>
+    </head>
+    <body style="background-color: #000000;">
+        <div id="main">
+            <div class="top-contents">
+            <div class="top-heading">
+                <img src="/images/the_masthead.png" class="masthead"/>
+                <div id="title"><span id="bullet" style="display: none;">&bullet;</span> Live Step-Free Access Outages</div>
+            </div>
+            <div id="press-region">
+                <div id="pressy"></div>
+                <div id="last-update" style="display: block;"></div>
+            </div>
+            </div>
+            <div class="backing">
+            <div id="time-warning" style="display: none;"></div>
+            <div id="api-output">
+                Loading...
+            </div>
+            </div>
+        </div>
+        <footer id="footer">© Nick Hart</footer>
+    </body>
+</html>
