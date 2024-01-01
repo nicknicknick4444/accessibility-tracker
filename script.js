@@ -9,7 +9,7 @@ var sta_width = 3000;
 let data_back = {};
 let multi = {};
 let collect_it = [];
-const delay = 300000;
+const delay = 30000;
 
 function make_req() {
     fetch("https://api.tfl.gov.uk/Disruptions/Lifts/")
@@ -317,7 +317,8 @@ function time_reaction() {
         } else if (left === 1) {
             reset_message = "";
         } else if (left < 1) {
-            reset_message = "s";
+            left = "Under a "
+            reset_message = "";
         }
         time_warning.innerHTML = `${left} minute${reset_message} until you can refresh`;
     }
