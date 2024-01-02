@@ -430,7 +430,7 @@ function begin() {
     button_decide();
     slide();
     live_bullet();
-    footer.innerHTML = `© Nick Hart ${year}`;
+    footer.innerHTML = `&nbsp;&nbsp;© Nick Hart ${year}`;
 };
 
 window.onload = begin();

@@ -24,6 +24,10 @@ app.get("/images/the_masthead.png", (req, res) => {
     res.sendFile("/images/the_masthead.png", {root: __dirname});
 });
 
+app.get("/images/the_masthead2.png", (req, res) => {
+    res.sendFile("/images/the_masthead2.png", {root: __dirname});
+});
+
 app.options("/", (req, res) => {
     res.setHeader("access-Control-Allow-Origin", "https://data.bus-data.dft.gov.uk/api/v1/datafeed/690/?api_key=d8107d46f33d80916102b16d79415dd3169a5dc4");
     res.setHeader("Access-Control-Allow-Methods", "GET");

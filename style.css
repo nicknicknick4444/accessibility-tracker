@@ -1,6 +1,6 @@
 body {
 	margin: 0;
-	margin-right: 0;	
+	min-height: 100vh;
 }
 
 #api-output {
@@ -9,6 +9,7 @@ body {
 	min-width: 700px;
 	max-width: 750px;
 	margin: auto;
+	overflow-y: hidden;
 }
 
 .top-heading {
@@ -21,10 +22,12 @@ body {
 .top-contents {
 	margin-top: -8px;
 	min-width: 700px;
+	/*max-width: 750px;*/
+	width: 100%;
 	height: 115px;
 	background-color: #fff;
-	margin-left: -8px;
-    	margin-right: -8px;
+	/*margin-left: -8px;
+    	margin-right: -8px;*/
 }
 
 .masthead {
@@ -33,7 +36,12 @@ body {
 	margin-left: 20%;
 	float: left;
 	width: 200px;
+	display: block;
 }
+
+.mob-masthead {
+	display: none;
+	}
 
 #title {
 	font-size: 25px;
@@ -52,10 +60,11 @@ body {
 	width: 130px;
 	font-size: 15px;
 	border-radius: 3px;
+	line-height: 25px;
 	font-family: helvetica;
 	color: fff;
 	text-align: center;
-	padding: 5px 0 3px 0;
+	/*padding: 3px 0 3px 0;*/
 	clear: both;
 	margin: auto;
 	position: relative;
@@ -100,9 +109,11 @@ body {
 	position: fixed;
 	top: 0;
 	left: 0;
+	right: 0;
 	/*width: 100%;*/
 	margin-left: 15%;
 	margin-right: 15%;
+	
 	background-color: #333;
 	overflow-y: auto;
 	overflow-x: hidden;
@@ -270,22 +281,34 @@ body {
 	cursor: pointer;
 }
 
-#left-cover, #right-cover {
+.good-to-go:hover {
+	background-color: #0060c4;
+}
+
+/*#left-cover, #right-cover {
 	background-color: #000;
 	position: absolute;
 	height: 100%;
 	z-index: 2000;
-}
+}*/
 
 footer {
 	font-family: helvetica;
 	color: #fff;
 	font-size: 8px;
-	padding-top: 3px;
-	padding-left: 5px;
-	padding-bottom: 3px;
+	padding-top: 5px;
+	min-height: 40vh;
+	/*padding-bottom: 3px;*/
 	position: relative;
-	bottom: 0;	
+	left: 0;
+	bottom: 0;
+	margin-top: 0px;
+	clear: both;
+	/*margin: 0;*/
+	/*min-width: 700px;*/
+	width: 100%;
+	background-color: #004791;
+	z-index: 1000;
 }
 
 /* START OF MOBILE */
@@ -315,7 +338,7 @@ footer {
 		height: 61px;
 		position: fixed;
 		z-index: 2000;
-		background-color: #fff;
+		background-color: #004791;
 		/*border-bottom: 1px solid #fff;*/
 	}
 	
@@ -331,16 +354,18 @@ footer {
 	}
 
 	.masthead {
+		display: none;
+	}
+
+	.mob-masthead {
+		display: block;
 		max-width: 80px;
-		position: relative;
-		margin-top: 0px;
-		/*margin-left: 1%;*/
+		position: absolute;
+		left: 0;
 		margin: auto;
-		padding-top: 13px;
-		padding-right: 6px;
-		padding-bottom: 15px;
-		padding-left: 17px;
-		background-color: #fff;
+    		padding-bottom: 15px;
+    		padding-left: 11px;
+    		margin-top: 24px;
 	}
 
 	#press-region {
@@ -357,12 +382,12 @@ footer {
 	#title {
 		padding-top: 19px;
 		padding-bottom: 10px;
-		padding-left: 0px;
+		padding-right: 9px;
 		text-align: center;
 		left: -40%;
-		font-size: 12px;
+		font-size: 11px;
 		line-height: 16px;
-		width: 110px;
+		width: 88px;
 		/*float: right;*/
 		color: #fff;
 		position: relative;
@@ -372,16 +397,25 @@ footer {
 	}
 
 	#pressy {
-		width: 25%;
-		height: 10px;
+		/*margin-left: 76%;
+		width: 65px;
+		line-height: 20px;
 		clear: none;
-		top: 18;
-		/*right: 60;*/
-		left: -22%;
-		padding: 4px 5px 7px 5px;
+		top: 21;
+		left: -20%;
+		padding: 0px 0px 0px 0px;
 		font-size: 12px;
-		/*margin-left: 33%;*/
-		text-align: center;
+		margin-left: 33%;
+		display: block;
+		text-align: center;*/
+		width: 25%;
+		line-height: 26px;
+		padding-top: 0px;
+		padding-left: 1px;
+		position: relative;
+		top: -45;
+		left: -20%;
+		font-size: 12px;
 	}
 
 	.too-soon {
@@ -397,9 +431,9 @@ footer {
 		width: 150px;
 		/*clear: none;*/
 		position: relative;
-		top: -17;
+		top: -41;
 		margin: auto;
-		left: -22%;
+		left: -20%;
 		/*right: 8;
 		float: right;*/
 		text-align: center;
@@ -422,7 +456,7 @@ footer {
 	}
 	
 	.info-list-mob {
-		padding-top: 2px;
+		padding-top: 3px;
 	}
 
 	.notif-inner {
@@ -471,11 +505,13 @@ footer {
 		top: -30;
 	}
 
-	.detail {	
+	.detail {
 		margin-left: 0;
 		margin-right: 0;
 		z-index: 2500;
+		border-left: none;
 		border-right: none;
+		width: 100%;
 		/*border-bottom: 1px solid #fff;*/
 	}
 
