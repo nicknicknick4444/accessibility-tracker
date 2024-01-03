@@ -137,7 +137,7 @@ body {
 }
 
 .info-list {
-	margin-top: 18px;
+	margin-top: 21px;
 }
 
 .area {
@@ -443,10 +443,12 @@ footer {
 
 	.info {	
 		padding-top: 15px;
+		margin-bottom: -3px;
 	}
 	
 	.info-list-mob {
 		padding-top: 6px;
+		margin-bottom: -3px;
 	}
 
 	.notif-inner {
