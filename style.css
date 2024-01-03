@@ -504,6 +504,7 @@ footer {
 		border-left: none;
 		border-right: none;
 		width: 100%;
+		min-height: 500px;
 		/*border-bottom: 1px solid #fff;*/
 	}
 
