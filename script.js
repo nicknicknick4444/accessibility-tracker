@@ -57,6 +57,16 @@ function filter_loop(this_array, lookupval, word) {
         } 
     }
 
+    // new_array = new_array.sort((a, b) => {
+    //     if (a.stopPointName < b.stopPointName) {
+    //         return -1;
+    //     } else if (a.stopPointName > b.stopPointName) {
+    //         return 1;
+    //     } else {
+    //         return 0;
+    //     }
+    // });
+
     new_array = new_array.sort((a, b) => {
         if (a.stopPointName < b.stopPointName) {
             return -1;
