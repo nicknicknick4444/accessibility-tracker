@@ -117,7 +117,7 @@ body {
 	background-color: #333;
 	overflow-y: auto;
 	overflow-x: hidden;
-	max-height: 500px;
+	max-height: 300px;
 	font-family: Poppins;
 	z-index: 1010;
 	border-left: 1px solid #fff;
